@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,13 +10,14 @@ namespace AlexzanderCowell
 {
     public class SceneLoader : MonoBehaviour
     {
-        public bool levelNext = false;
+        [SerializeField] private LevellingSystem levellingSystem;
+        
 
         private void Update(){
             if 
-                (levelNext == true) {
-                
-                OnTriggerEnter2D();
+                (levellingSystem.levelNext == true){
+
+                  
             }
                 
         }

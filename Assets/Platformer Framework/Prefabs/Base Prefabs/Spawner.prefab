@@ -44,5 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da74b81f726e8114a86076d519dd0c05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjectToSpawn: {fileID: 0}
-  gameObjectType: 0
+  spawnOnEnable: 1
+  gameObjectToSpawn: {fileID: 579154950694435714}
+  gameObjectType: 2
