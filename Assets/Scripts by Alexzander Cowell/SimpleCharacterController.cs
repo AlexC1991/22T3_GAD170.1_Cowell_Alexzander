@@ -15,7 +15,7 @@ namespace AlexzanderCowell
         [Range (1,50)]
         [SerializeField] private float walkSpeed; // Walk/run speed
         [Range(1, 50)]
-        [SerializeField] private float jumpSpeed; // Jump speed
+        [SerializeField] public float jumpSpeed; // Jump speed
 
         [Header("CharacterSprite")]
         [SerializeField] private SpriteRenderer spriteRenderer; // choose your sprite

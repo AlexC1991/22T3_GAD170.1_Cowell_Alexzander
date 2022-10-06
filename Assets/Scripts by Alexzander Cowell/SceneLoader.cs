@@ -8,31 +8,41 @@ namespace AlexzanderCowell
 
 
 {
-    public class SceneLoader : MonoBehaviour
-    {
+    public class SceneLoader : MonoBehaviour{
         [SerializeField] private LevellingSystem levellingSystem;
-        
-
-        private void Update(){
-            if 
-                (levellingSystem.levelNext == true){
-
-                  
+        private bool Next = false;
+        void Update(){       // Next level will be opened and will tell you this.
+            if (levellingSystem.levelNext == true){
+                Debug.Log("Next Level Opened");     
             }
-                
-        }
 
-        void OnTriggerEnter2D(Collider2D collision){
-   
-            if (collision.tag == "Player"){
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Application.Quit();
+            }
+
+
+        }
+          // When the levelNext is true from Levelling Systems and you collide with the "flag" you can progress to next level.
+        private void OnTriggerEnter2D(Collider2D collision){
+            if (levellingSystem.levelNext == true && collision.CompareTag("Flag")){
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-                Debug.Log("You Win! now Next Level! :D ");            
+
             }
-
-
+             // Quits the game once you collide with it.
+            if (collision.CompareTag("Terminate")){
+                Application.Quit();
+                Debug.Log("Quit");
+            }
+              // Resets the game back to the start when you collide with it.
+            if (collision.CompareTag("Again")){
+                SceneManager.LoadScene("Platformer (Basic Scene)");
+                Debug.Log("Retry");
+            }
 
         }
 
+           
     }
 
 }

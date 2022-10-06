@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2526515571726375550}
   m_Layer: 6
   m_Name: Alan Sprite
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,6 +119,8 @@ GameObject:
   - component: {fileID: 2090565586}
   - component: {fileID: 1193627529133261237}
   - component: {fileID: 8409380988651000155}
+  - component: {fileID: 5061533429893636617}
+  - component: {fileID: 2947954008150162104}
   m_Layer: 6
   m_Name: Character - Alan
   m_TagString: Player
@@ -230,3 +232,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5061533429893636617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6163263750838337240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9ee9bbe453490489143113da86edf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelNext: 0
+  jumper: {fileID: 1193627529133261237}
+--- !u!114 &2947954008150162104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6163263750838337240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558ce2a1a59e5c64c800538bfe8158b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levellingSystem: {fileID: 5061533429893636617}

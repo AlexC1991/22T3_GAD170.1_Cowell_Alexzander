@@ -171,6 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558ce2a1a59e5c64c800538bfe8158b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levellingSystem: {fileID: 1610187858}
 --- !u!1 &442034016
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +201,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &673944684
 GameObject:
@@ -242,7 +243,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3930189940316194765, guid: 5e9da2deb578ce94397a90934abf3812, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3930189940316194765, guid: 5e9da2deb578ce94397a90934abf3812, type: 3}
       propertyPath: m_LocalPosition.x
@@ -287,6 +288,10 @@ PrefabInstance:
     - target: {fileID: 5123431856474122467, guid: 5e9da2deb578ce94397a90934abf3812, type: 3}
       propertyPath: m_Name
       value: Spawner - Collectable Coin Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123431856474122467, guid: 5e9da2deb578ce94397a90934abf3812, type: 3}
+      propertyPath: m_TagString
+      value: Coin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9da2deb578ce94397a90934abf3812, type: 3}
@@ -509,7 +514,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3930189940316194765, guid: 5e9da2deb578ce94397a90934abf3812, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3930189940316194765, guid: 5e9da2deb578ce94397a90934abf3812, type: 3}
       propertyPath: m_LocalPosition.x
@@ -554,6 +559,10 @@ PrefabInstance:
     - target: {fileID: 5123431856474122467, guid: 5e9da2deb578ce94397a90934abf3812, type: 3}
       propertyPath: m_Name
       value: Spawner - Collectable Coin Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123431856474122467, guid: 5e9da2deb578ce94397a90934abf3812, type: 3}
+      propertyPath: m_TagString
+      value: Coin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9da2deb578ce94397a90934abf3812, type: 3}
@@ -824,6 +833,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1610187857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1610187859}
+  - component: {fileID: 1610187858}
+  m_Layer: 0
+  m_Name: LevelingSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1610187858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610187857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9ee9bbe453490489143113da86edf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelNext: 0
+  jumper: {fileID: 0}
+--- !u!4 &1610187859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610187857}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.54243183, y: -0.6283626, z: 2.111749}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1987659630
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -833,7 +888,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3930189940316194765, guid: 5e9da2deb578ce94397a90934abf3812, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3930189940316194765, guid: 5e9da2deb578ce94397a90934abf3812, type: 3}
       propertyPath: m_LocalPosition.x
@@ -878,6 +933,10 @@ PrefabInstance:
     - target: {fileID: 5123431856474122467, guid: 5e9da2deb578ce94397a90934abf3812, type: 3}
       propertyPath: m_Name
       value: Spawner - Collectable Coin Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123431856474122467, guid: 5e9da2deb578ce94397a90934abf3812, type: 3}
+      propertyPath: m_TagString
+      value: Coin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9da2deb578ce94397a90934abf3812, type: 3}
@@ -1276,7 +1335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7394264480483853114, guid: 63a2da37f3a2f33449155db3a3059391, type: 3}
       propertyPath: m_AnimatedTiles.Array.data[3].second.m_AnimationSpeed
-      value: 5
+      value: 5.0000005
       objectReference: {fileID: 0}
     - target: {fileID: 7394264480483853114, guid: 63a2da37f3a2f33449155db3a3059391, type: 3}
       propertyPath: m_AnimatedTiles.Array.data[4].second.m_AnimationSpeed
@@ -1371,6 +1430,18 @@ PrefabInstance:
     - target: {fileID: 1833479559499512835, guid: 1977e09d6ab44bf4f92eacd0e886d8ef, type: 3}
       propertyPath: m_Name
       value: Level Goal - Flag
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833479559499512835, guid: 1977e09d6ab44bf4f92eacd0e886d8ef, type: 3}
+      propertyPath: m_TagString
+      value: Flag
+      objectReference: {fileID: 0}
+    - target: {fileID: 3551324015055218966, guid: 1977e09d6ab44bf4f92eacd0e886d8ef, type: 3}
+      propertyPath: m_TagString
+      value: Flag
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722999900129874763, guid: 1977e09d6ab44bf4f92eacd0e886d8ef, type: 3}
+      propertyPath: m_TagString
+      value: Flag
       objectReference: {fileID: 0}
     - target: {fileID: 8250458122567704910, guid: 1977e09d6ab44bf4f92eacd0e886d8ef, type: 3}
       propertyPath: m_RootOrder

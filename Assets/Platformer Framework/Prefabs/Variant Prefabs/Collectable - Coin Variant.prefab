@@ -15,9 +15,17 @@ PrefabInstance:
       propertyPath: pointsValue
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 316770711823882073, guid: ed7d31d1ddd33f2458499bb15073022d, type: 3}
+      propertyPath: m_TagString
+      value: Coin
+      objectReference: {fileID: 0}
     - target: {fileID: 3322425955676627490, guid: ed7d31d1ddd33f2458499bb15073022d, type: 3}
       propertyPath: m_Name
       value: Collectable - Coin Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3322425955676627490, guid: ed7d31d1ddd33f2458499bb15073022d, type: 3}
+      propertyPath: m_TagString
+      value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 4191357661423321557, guid: ed7d31d1ddd33f2458499bb15073022d, type: 3}
       propertyPath: m_Sprite
